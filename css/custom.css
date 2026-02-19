@@ -1,0 +1,96 @@
+/**
+ * Personal Brand Website — Custom styles
+ * Complements Tailwind with typography, animations, and overrides.
+ */
+
+/* Use Syne for display (headings), Inter for body */
+.font-display {
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Skill tags: pill style with hover */
+.skill-tag {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(203 213 225);
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(71, 85, 105, 0.5);
+  border-radius: 9999px;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.skill-tag:hover {
+  border-color: rgba(14, 165, 233, 0.5);
+  background: rgba(14, 165, 233, 0.08);
+  color: rgb(224 242 254);
+}
+
+/* Form inputs: consistent focus and error states */
+.input-field:focus {
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.4);
+}
+
+.input-field.error {
+  border-color: rgb(248 113 113);
+}
+
+.input-field.error:focus {
+  box-shadow: 0 0 0 2px rgba(248, 113, 113, 0.4);
+}
+
+/* Header background on scroll */
+header.scrolled {
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-slide-up,
+  .animate-bounce {
+    animation: none;
+    opacity: 1;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Project cards: fade-in on scroll */
+.project-card {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Print: minimal styling */
+@media print {
+  header,
+  .animate-bounce,
+  #contact-form button,
+  .project-card a {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #111;
+  }
+
+  a {
+    color: #0284c7;
+  }
+}

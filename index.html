@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Freelance .NET Backend Developer — Building reliable, scalable backend systems. Clean Architecture, APIs, and secure applications for startups and businesses." />
+  <meta name="keywords" content=".NET developer, backend developer, C#, ASP.NET Core, API development, freelance, clean architecture" />
+  <meta name="author" content="Omar Ashraf" />
+  <title>Omar Ashraf | Backend .NET Developer — Reliable & Scalable Systems</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            accent: { DEFAULT: '#0ea5e9', light: '#38bdf8', dark: '#0284c7' },
+            surface: { 800: '#1e293b', 900: '#0f172a', 950: '#020617' }
+          },
+          fontFamily: {
+            display: ['Clash Display', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.6s ease-out forwards',
+            'slide-up': 'slideUp 0.6s ease-out forwards'
+          },
+          keyframes: {
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            slideUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body class="bg-surface-950 text-slate-200 font-body antialiased overflow-x-hidden">
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:rounded-lg">Skip to main content</a>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="fixed top-0 left-0 right-0 z-40 transition-all duration-300" id="header">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between" aria-label="Main navigation">
+      <a href="#hero" class="text-xl font-display font-bold text-white tracking-tight">Omar<span class="text-accent">Ashraf</span></a>
+      <button type="button" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-surface-800 aria-expanded:false" aria-label="Toggle menu" id="menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+        <li><a href="#expertise" class="hover:text-white transition-colors">Expertise</a></li>
+        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+        <li><a href="#contact" class="inline-flex items-center px-4 py-2 rounded-lg bg-accent text-white font-medium hover:bg-accent-light transition-colors">Start a Project</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile menu -->
+    <div class="md:hidden fixed inset-0 top-[57px] bg-surface-900/95 backdrop-blur-sm hidden flex flex-col gap-6 p-6" id="mobile-menu" aria-hidden="true">
+      <a href="#about" class="text-lg text-slate-300 hover:text-white">About</a>
+      <a href="#expertise" class="text-lg text-slate-300 hover:text-white">Expertise</a>
+      <a href="#services" class="text-lg text-slate-300 hover:text-white">Services</a>
+      <a href="#contact" class="text-lg text-accent font-medium">Start a Project</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========== 1. HERO SECTION ========== -->
+    <section id="hero" class="min-h-screen flex flex-col justify-center relative px-6 pt-24 pb-16 md:pt-32">
+      <div class="absolute inset-0 bg-gradient-to-b from-surface-900/50 to-surface-950 pointer-events-none" aria-hidden="true"></div>
+      <div class="max-w-4xl mx-auto relative z-10">
+        <p class="text-accent font-medium text-sm uppercase tracking-widest mb-4 animate-fade-in opacity-0" style="animation-delay: 0.1s">Backend .NET Developer</p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight tracking-tight animate-fade-in opacity-0" style="animation-delay: 0.2s">
+          Building Reliable & Scalable Backend Systems with .NET
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl animate-fade-in opacity-0" style="animation-delay: 0.4s">
+          Helping startups turn ideas into secure, high-performance applications.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4 animate-fade-in opacity-0" style="animation-delay: 0.6s">
+          <a href="#contact" class="inline-flex items-center px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent-light transition-all duration-200 shadow-lg shadow-accent/20 hover:shadow-accent/30">Start a Project</a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce opacity-60" aria-hidden="true">
+        <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      </div>
+    </section>
+
+    <!-- ========== 2. TRUST SECTION (WHY ME?) ========== -->
+    <section id="trust" class="py-20 px-6 border-t border-slate-800/50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-display font-bold text-white text-center mb-12">Why work with me?</h2>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8" role="list">
+          <li class="flex items-start gap-4 group">
+            <span class="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent/20 transition-colors" aria-hidden="true">✔</span>
+            <div>
+              <h3 class="font-semibold text-white">Clean Architecture & Best Practices</h3>
+              <p class="text-sm text-slate-400 mt-1">Maintainable, testable code that scales with your business.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 group">
+            <span class="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent/20 transition-colors" aria-hidden="true">✔</span>
+            <div>
+              <h3 class="font-semibold text-white">Scalable & Secure APIs</h3>
+              <p class="text-sm text-slate-400 mt-1">RESTful APIs built for growth and security from day one.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 group">
+            <span class="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent/20 transition-colors" aria-hidden="true">✔</span>
+            <div>
+              <h3 class="font-semibold text-white">Clear Communication with Clients</h3>
+              <p class="text-sm text-slate-400 mt-1">No jargon overload — I explain progress and decisions clearly.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4 group">
+            <span class="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent/20 transition-colors" aria-hidden="true">✔</span>
+            <div>
+              <h3 class="font-semibold text-white">On-time Delivery</h3>
+              <p class="text-sm text-slate-400 mt-1">I commit to deadlines and keep you updated every step of the way.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 3. ABOUT (STORYTELLING) ========== -->
+    <section id="about" class="py-24 px-6 bg-surface-900/30">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mb-4">About me</h2>
+        <p class="text-accent font-medium text-sm uppercase tracking-widest mb-8">The person behind the code</p>
+        <div class="prose prose-invert prose-slate max-w-none space-y-6 text-slate-400 leading-relaxed">
+          <p class="text-lg">
+            I'm a backend engineer who cares as much about your business outcomes as I do about clean code. I've spent years turning complex requirements into reliable systems that startups and growing companies can depend on.
+          </p>
+          <p>
+            I don't just write APIs — I help you avoid costly rewrites, security issues, and scaling headaches. My approach is simple: understand your goals, design for the long term, and deliver solutions that work in the real world.
+          </p>
+          <p>
+            When you work with me, you get a partner who communicates clearly, meets deadlines, and thinks about your users and your bottom line. If that sounds like what you're looking for, let's talk.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. EXPERTISE / SKILLS ========== -->
+    <section id="expertise" class="py-24 px-6 border-t border-slate-800/50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mb-4">Expertise</h2>
+        <p class="text-slate-400 max-w-2xl mb-12">Backend depth and soft skills that make projects run smoothly.</p>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-lg font-semibold text-accent mb-4">Backend & Tech</h3>
+            <ul class="flex flex-wrap gap-3" role="list">
+              <li><span class="skill-tag">C#</span></li>
+              <li><span class="skill-tag">ASP.NET Core</span></li>
+              <li><span class="skill-tag">Web API</span></li>
+              <li><span class="skill-tag">Entity Framework Core</span></li>
+              <li><span class="skill-tag">SQL Server</span></li>
+              <li><span class="skill-tag">Clean Architecture</span></li>
+              <li><span class="skill-tag">REST APIs</span></li>
+              <li><span class="skill-tag">Authentication & Authorization</span></li>
+              <li><span class="skill-tag">LINQ</span></li>
+              <li><span class="skill-tag">Git & GitHub</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-accent mb-4">Soft Skills</h3>
+            <ul class="flex flex-wrap gap-3" role="list">
+              <li><span class="skill-tag">Client Communication</span></li>
+              <li><span class="skill-tag">Business Understanding</span></li>
+              <li><span class="skill-tag">Problem Solving</span></li>
+              <li><span class="skill-tag">Time Management</span></li>
+              <li><span class="skill-tag">Reliability</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. SERVICES ========== -->
+    <section id="services" class="py-24 px-6 border-t border-slate-800/50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mb-4">Services</h2>
+        <p class="text-slate-400 max-w-2xl mb-12">What I can do for your product or business.</p>
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
+          <li class="rounded-xl border border-slate-800 bg-surface-900/30 p-6 hover:border-accent/30 transition-colors">
+            <h3 class="font-semibold text-white mb-2">Backend API Development</h3>
+            <p class="text-sm text-slate-400">RESTful APIs and internal services built with ASP.NET Core, following best practices and your product needs.</p>
+          </li>
+          <li class="rounded-xl border border-slate-800 bg-surface-900/30 p-6 hover:border-accent/30 transition-colors">
+            <h3 class="font-semibold text-white mb-2">System Architecture Design</h3>
+            <p class="text-sm text-slate-400">Clean Architecture and modular design so your system stays maintainable and ready to scale.</p>
+          </li>
+          <li class="rounded-xl border border-slate-800 bg-surface-900/30 p-6 hover:border-accent/30 transition-colors">
+            <h3 class="font-semibold text-white mb-2">Database Design & Optimization</h3>
+            <p class="text-sm text-slate-400">Schema design, migrations, indexing, and query tuning for performance and reliability.</p>
+          </li>
+          <li class="rounded-xl border border-slate-800 bg-surface-900/30 p-6 hover:border-accent/30 transition-colors">
+            <h3 class="font-semibold text-white mb-2">Authentication & Security</h3>
+            <p class="text-sm text-slate-400">JWT, OAuth, role-based access, and security best practices to protect your data and users.</p>
+          </li>
+          <li class="rounded-xl border border-slate-800 bg-surface-900/30 p-6 hover:border-accent/30 transition-colors">
+            <h3 class="font-semibold text-white mb-2">Bug Fixing & Performance Optimization</h3>
+            <p class="text-sm text-slate-400">Tracking down bugs, fixing legacy code, and improving response times and resource usage.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 6. CV / RESUME ========== -->
+    <section id="cv" class="py-20 px-6 bg-surface-900/30">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-display font-bold text-white mb-4">Resume</h2>
+        <p class="text-slate-400 mb-8">Download my CV for a quick overview of my experience and skills.</p>
+        <a href="Omar@ Ashraf cv.pdf" download class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800 text-white font-medium border border-slate-700 hover:bg-slate-700 hover:border-slate-600 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Download CV
+        </a>
+        <!-- <p class="text-xs text-slate-500 mt-4">Place your PDF at <code class="bg-surface-800 px-1 rounded">assets/cv/Omar-Ashraf-cv.pdf</code> (see <code>assets/cv/README.md</code> for setup)</p> -->
+      </div>
+    </section>
+
+    <!-- ========== 7. CONTACT / CTA ========== -->
+    <section id="contact" class="py-24 px-6 border-t border-slate-800/50">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mb-4">Let's build something powerful together</h2>
+        <p class="text-slate-400 mb-12 max-w-xl">Have a project in mind? Tell me about it — I'll get back to you within 24 hours.</p>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-4">Contact details</h3>
+            <ul class="space-y-3 text-slate-400" role="list">
+              <li><a href="tel:+201140848281" class="flex items-center gap-3 hover:text-accent transition-colors"><span aria-hidden="true">📞</span> 01140848281</a></li>
+              <li><a href="https://www.linkedin.com/in/omar3ashraf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-accent transition-colors"><span aria-hidden="true">💼</span> LinkedIn</a></li>
+              <li><a href="https://github.com/omarashraf112" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-accent transition-colors"><span aria-hidden="true">💻</span> GitHub</a></li>
+              <li><a href="mailto:omarashraf20060118@gmail.com" class="flex items-center gap-3 hover:text-accent transition-colors"><span aria-hidden="true">✉️</span> omarashraf20060118@gmail.com</a></li>
+            </ul>
+          </div>
+          <form id="contact-form" class="space-y-4" novalidate>
+            <div>
+              <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" class="input-field w-full px-4 py-3 rounded-lg bg-surface-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="Your name" />
+              <span class="error-message hidden text-red-400 text-sm mt-1" id="name-error"></span>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" class="input-field w-full px-4 py-3 rounded-lg bg-surface-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="you@company.com" />
+              <span class="error-message hidden text-red-400 text-sm mt-1" id="email-error"></span>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+              <textarea id="message" name="message" required rows="4" class="input-field w-full px-4 py-3 rounded-lg bg-surface-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none" placeholder="Tell me about your project..."></textarea>
+              <span class="error-message hidden text-red-400 text-sm mt-1" id="message-error"></span>
+            </div>
+            <button type="submit" class="w-full sm:w-auto px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent-light transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-surface-950">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. FOOTER ========== -->
+    <footer class="py-12 px-6 border-t border-slate-800/50">
+      <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+        <p class="text-slate-500 text-sm text-center sm:text-left">Reliable backend. Clear communication. Long-term partnership.</p>
+        <div class="flex items-center gap-6">
+          <a href="https://www.linkedin.com/in/omar3ashraf" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-accent transition-colors" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/omarashraf112" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-accent transition-colors" aria-label="GitHub">GitHub</a>
+          <a href="mailto:omarashraf20060118@gmail.com" class="text-slate-500 hover:text-accent transition-colors" aria-label="Email">Email</a>
+        </div>
+      </div>
+      <p class="max-w-5xl mx-auto mt-6 text-center text-slate-600 text-xs">© <span id="year"></span> Omar Ashraf. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
